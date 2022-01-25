@@ -28,7 +28,22 @@
 
   <body>
     <!-- Stuff in header of the page with time blocks below in div class 'container' -->
-    
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- this is for the day date to display under the header, id to be used in js command -->
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+      <!-- Timeblocks go here, from 9 to 5, the first can be pasted and then time between hour class changed -->
+      <!-- row is time-block within class for Bootstrap, next div class contains column Bootstrap stuff: if medium screen then column is full width, and hour is for CSS-->
+        <div id="hour9" class="row time-block">
+          <div class="col-md-1 hour">9 AM</div>
+          <!-- this is for writing the task to be colored later based on time with description class for CSS -->
+          <textarea class="col-md-10 description"></textarea>
+          <!-- the button has saveBtn for CSS and is inline with row, the i class and fas fa-save stuff is for the save icon -->
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
 
       </div>
     </div>
